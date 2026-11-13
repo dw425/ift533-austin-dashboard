@@ -5,6 +5,13 @@
 Interactive dashboard of Austin, TX Airbnb listings (Sep 2026) for city
 short-term-rental compliance staff and prospective hosts.
 
+**Rebuilding it in Tableau?** [`TABLEAU_GUIDE.md`](TABLEAU_GUIDE.md) maps every
+plot, control, calculated field and the layout to its Tableau equivalent,
+working from `data/austin_listings_tidy.csv`.
+
+The team's Mural project board was built from
+[`mural_build_prompts.md`](mural_build_prompts.md).
+
 **Team:** Daniel Warren (dwarre26@asu.edu), Data lead · [Teammate name] ·
 [Teammate name] · [Teammate name]
 
@@ -16,8 +23,10 @@ short-term-rental compliance staff and prospective hosts.
 - Column types and domains: [`data/data_dictionary.csv`](data/data_dictionary.csv)
 - 37 columns typed: 15 Ratio · 10 Categorical · 8 Interval · 4 Ordinal
 
-The raw `listings.csv.gz` is not committed. Download it from the Inside Airbnb
-link above (Austin, Texas → 17 September 2026 → Detailed Listings data).
+The raw `listings.csv.gz` **is committed** at [`data/listings.csv.gz`](data/listings.csv.gz)
+(Inside Airbnb removes old scrapes, so the repo keeps the snapshot). It is also
+still downloadable from the link above (Austin, Texas → 17 September 2026 →
+Detailed Listings data).
 
 ## How it was built
 
