@@ -12,8 +12,8 @@ working from `data/austin_listings_tidy.csv`.
 The team's Mural project board was built from
 [`mural_build_prompts.md`](mural_build_prompts.md).
 
-**Team:** Daniel Warren (dwarre26@asu.edu), Data lead · [Teammate name] ·
-[Teammate name] · [Teammate name]
+**Team:** Daniel Warren (dwarre26@asu.edu), Data lead · Jack DeGennaro
+(jadegenn@asu.edu)
 
 ## Data
 
