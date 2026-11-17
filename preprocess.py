@@ -83,13 +83,13 @@ FROM t
 """)
 
 checks = con.execute("""
-SELECT count(*) rows,
-       count(price) priced,
-       count(rating) reviewed,
-       sum(price_outlier::INT) outliers,
-       sum(license_shown::INT) licensed,
-       count(DISTINCT host_id) hosts,
-       count(DISTINCT zip) zips
+SELECT count(*) AS n_rows,
+       count(price) AS priced,
+       count(rating) AS reviewed,
+       sum(price_outlier::INT) AS outliers,
+       sum(license_shown::INT) AS licensed,
+       count(DISTINCT host_id) AS hosts,
+       count(DISTINCT zip) AS zips
 FROM tidy""").fetchone()
 
 con.execute(f"COPY tidy TO '{OUT}' (HEADER, DELIMITER ',')")
